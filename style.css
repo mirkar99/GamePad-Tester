@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+main {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: transform 1s;
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav__button {
+    background-color: black;
+    color: darkgray;
+    width: 25px;
+    height: 25px;
+}
+
+.nav__button:hover {
+    cursor: pointer;
+}
+
+.Gamepad {
+    background: url(img/xboxGraphic.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 400px;
+    width: 600px;
+    transition: transform .2s;
+}
+
+.GamePad__Button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: gray;
+    opacity: 0;
+}
+
+.GamePad__Button--A {
+    top: 129px;
+    left: 429px;
+}
+
+.GamePad__Button--B {
+    top: calc(1*-40px + 89px);
+    left: 472px;
+}
+
+.GamePad__Button--X {
+    top: calc(2*-40px + 89px);
+    left: 389px;
+}
+
+.GamePad__Button--Y {
+    top: calc(3*-40px + 49px);
+    left: 429px;
+}
+
+.GamePad__Shoulder {
+    position: relative;
+    background-color: grey;
+    width: 110px;
+    height: 15px;
+    border-top-left-radius: 75%;
+    border-top-right-radius: 75%;
+    opacity: 0;
+
+}
+
+.GamePad__Shoulder--LB {
+    transform: rotate(-22deg);
+    top: calc(4*-40px + 8px);
+    left: 94px;
+}
+
+.GamePad__Shoulder--RB {
+    transform: rotate(22deg);
+    top: calc(4*-40px + 1*-15px + 8px);
+    left: 394px;
+}
+
+.GamePad__Trigger {
+    position: relative;
+    width: 40px;
+    height: 65px;
+    background-color: gray;
+    opacity: 0;
+}
+
+.GamePad__Trigger--LT {
+    top: calc(4*-40px + 2*-15px + 17px);
+    left: 32px;
+}
+
+.GamePad__Trigger--RT {
+    top: calc(4*-40px + 2*-15px + 1*-65px + 17px);
+    left: 528px;
+}
+
+.GamePad__Option {
+    position: relative;
+    background-color: gray;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    opacity: 0;
+}
+
+.GamePad__Option--Back {
+    top: calc(4*-40px + 2*-15px + 2*-65px + 95px);
+    left: 245px
+}
+
+.GamePad__Option--Start {
+    top: calc(4*-40px + 2*-15px + 2*-65px + 1*-25px + 95px);
+    left: 330px
+}
+
+.GamePad__Stick {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.GamePad__Stick--Left {
+    top: calc(4*-40px + 2*-15px + 2*-65px + 2*-25px + 85px);
+    left: 126px;
+}
+
+.GamePad__Stick--Right {
+    top: calc(4*-40px + 2*-15px + 2*-65px + 2*-25px + 1*-50px + 172px);
+    left: 352px;
+}
+
+.GamePad__Dpad {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    opacity: 0;
+}
+
+.GamePad__Dpad--Up {
+    top: calc(4*-40px + 2*-15px + 2*-65px + 2*-25px + 2*-50px + 158px);
+    left: 210px
+}
+
+.GamePad__Dpad--Down {
+    transform: rotate(180deg);
+    top: calc(4*-40px + 2*-15px + 2*-65px + 2*-25px + 2*-50px + 1*-25px + 223px);
+    left: 210px
+}
+
+.GamePad__Dpad--Left {
+    transform: rotate(-90deg);
+    top: calc(4*-40px + 2*-15px + 2*-65px + 2*-25px + 2*-50px + 2*-25px + 191px);
+    left: 178px
+}
+
+.GamePad__Dpad--Right {
+    transform: rotate(90deg);
+    top: calc(4*-40px + 2*-15px + 2*-65px + 2*-25px + 2*-50px + 3*-25px + 191px);
+    left: 242px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: transform .2s;
+}
+
+.form__text {
+    width: 100%;
+    text-align: center;
+}
+
+.form_input--rage {
+    margin-right: 5px;
+    height: 50px;
+    width: 150px;
+}
+
+.form_input--button {
+    background-color: gray;
+    height: 25px;
+    width: 100px;
+}
+
+.form_input--button:hover {
+    cursor: pointer;
+}
+
+.GamePadStickInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    transition: transform .2s;
+    margin-bottom: 10px;
+}
+
+.GamePadStickInfo__Stick {
+    min-width: 200px;
+}
+
+.GamePadButtonsInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    transition: transform .2s;
+}
+
+.GamePadButtonsInfo__button {
+    min-width: 50px;
+}
+
+.pressed {
+    opacity: 0.5;
+}
+
+.hidden {
+    position: absolute;
+    visibility: hidden;
+    transform: scale(0);
+    opacity: 0;
+}
+
+@media (max-width:600px),
+(max-height:600px) {
+    main {
+        height: 300px;
+    }
+
+    .Gamepad {
+        transform: scale(0.5);
+    }
+}
+
+@media (max-width:400px),
+(max-height:400px) {
+    main {
+        height: 200px;
+    }
+
+    .Gamepad {
+        transform: scale(0.4);
+    }
+}
+
+@media (max-width:300px),
+(max-height:300px) {
+    main {
+        height: 150px;
+    }
+
+    .Gamepad {
+        transform: scale(0.3);
+    }
+}
