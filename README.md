@@ -1,3 +1,3 @@
 # GamePad-Tester
 
-This is the simple application where user can check fundamental functionality of GamePad.
+This is a simple application where users can check the fundamental functionality of GamePad.
