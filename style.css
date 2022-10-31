@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +20,7 @@ main {
 }
 
 .nav {
+    font-family: 'Lato', sans-serif;
     text-align: center;
 }
 
@@ -189,6 +191,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    font-family: 'Lato', sans-serif;
     transition: transform .2s;
 }
 
@@ -221,6 +224,7 @@ main {
     text-align: center;
     flex-wrap: wrap;
     gap: 5px;
+    font-family: 'Lato', sans-serif;
     transition: transform .2s;
     margin-bottom: 10px;
 }
@@ -237,6 +241,7 @@ main {
     text-align: center;
     flex-wrap: wrap;
     gap: 5px;
+    font-family: 'Lato', sans-serif;
     transition: transform .2s;
 }
 
@@ -269,7 +274,7 @@ main {
 @media (max-width:400px),
 (max-height:400px) {
     main {
-        height: 200px;
+        height: 170px;
     }
 
     .Gamepad {
