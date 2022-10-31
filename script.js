@@ -89,12 +89,12 @@ window.addEventListener("gamepadconnected", (e) => {
 });
 
 window.addEventListener("gamepaddisconnected", (e) => {
-    if(e.gamepad.index>0){
-    changePad(e.gamepad.index - 1);
+    if (e.gamepad.index > 0) {
+        changePad(e.gamepad.index - 1);
     }
     console.log(navigator.getGamepads()[0]);
     changeElementDisplay(navButtonsChildrens[e.gamepad.index], 'hide');
-    if (navigator.getGamepads()[0]?.connected  === false || navigator.getGamepads()[0] === null ) {
+    if (navigator.getGamepads()[0]?.connected === false || navigator.getGamepads()[0] === null) {
         InfoPanel.innerHTML = "<b>Please press random button on the controller</b>";
         changeElementDisplay(main, 'hide');
         changeElementDisplay(form, 'hide');
